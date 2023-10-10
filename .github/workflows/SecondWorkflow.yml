@@ -1,0 +1,8 @@
+name: Second WF
+on: issues
+jobs:
+    details:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Details information
+              run: echo "${{ toJSON(github) }}"
